@@ -1,0 +1,77 @@
+INSTRUÇÕES DE TRABALHO E COMANDOS PARA PROJETO EM CAPYBARA
+
+- Primeiro para começar um projeto em ruby executar o comando bundle init
+- Será gerado um arquivo chamado 'Gemfile' onde será centralizada as dependencias do seu projeto
+- Pode se manter source "https://rubygems.org"
+- Adicionar a gem do rspec (gem "rspec", "3.9.0") será o motor da aplicação de testes
+- Adicionar a gem do Capybara (gem "capybara", "3.31.0") é a interface de interação com a app web
+- Adicionar a gem do Selenium web driver (selenium-webdriver", "3.142.7) é as ferramentas que o capybara vai usar para a interações na app
+- Adicionar a gem do fii (gem "ffi", "1.12.2") é as ferramentas de interface externas que o capybara vai utilizar também
+- Após alterar o Gemfile, executar o comando 'bundle install' para instalar as dependencias.
+- Para iniciar o Rspec executar comando: rspec --init. serão geradas a pasta spec como spec_helper.rb e o arquivo .rspec
+
+[dentro do arquivo spec_helper.rb]
+- Após a criação do projeto isso por si só não liga o capybara e o selenium ao projeto rspec criado, então para criar esse vinculo:
+    1° Entrar na página de spec_helper.rb
+    2° Limpar os comentários para melhor organização
+    3° adcionar o capybara (require "capybara")
+    4° adcionar o capybara rspec (require "capybara/rspec")
+    5° adcionar o selenium-webdriver (require "selenium-webdriver")
+- Para configurar agora as ferramentas do capybara dentro do rspec:
+    1° Dentro da RSpec.configure do |config|, incluir o trecho(config.include Capybara::DSL)
+- Após a configuração do capybara no rspec, é necessário configurar o selenium para que execute dentro do google chrome,
+criar as configs do capybara adicionando seguinte trecho de código:
+Usando o google chrome:
+    Capybara.configure do |config|
+        config.default_driver = :selenium_chrome
+    end
+Usando o Firefox:
+    Capybara.configure do |config|
+        config.default_driver = :selenium
+    end
+- Para que o capybara rode no navegador chrome ou firefox deve ser instalado o webdriver especifico:
+    Google chrome - 
+        1° Acessar a página https://chromedriver.storage.googleapis.com/index.html
+        2° Visualizar a versão do seu google chrome
+        3° Baixar o arquivo compativel com sua versão do navegador
+        4° Extrair e colocar o arquivo na pasta raiz c:\Windows
+    Firefox - 
+        1° Acessar a página https://github.com/mozilla/geckodriver/releases
+        2° Visualizar a versão do seu Firefox
+        3° Baixar o arquivo compativel com sua versão do navegador
+        4° Extrair e colocar o arquivo na pasta raiz c:\Windows
+
+#Corpo de teste padrão:
+describe "", : do
+    before(:each) do
+      visit ""
+    end
+  
+    it "" do
+
+    end
+
+    after(:each) do
+      sleep 2
+    end
+end
+  
+
+# Sempre verificar as versões das gems na página https://rubygems.org/
+# Erro:
+λ rspec
+
+An error occurred while loading spec_helper.
+Failure/Error: require "selenium-webdriver"
+
+TypeError:
+  unable to resolve type 'intptr_t'
+# ./spec/spec_helper.rb:18:in `<top (required)>'
+# ------------------
+# --- Caused by: ---
+# LoadError:
+#   cannot load such file -- selenium-webdriver
+#   ./spec/spec_helper.rb:18:in `<top (required)>'
+No examples found.
+
+PARA SOLUCIONAR RODAR O COMANDO [gem install ffi]
