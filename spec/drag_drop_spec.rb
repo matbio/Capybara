@@ -10,8 +10,8 @@ describe "Quando eu uso a função de drag e drop", :dragdrop do
     elemento = find("img[alt='Homem Aranha']")
 
     elemento.drag_to esquerda
-    expect(esquerda).to have_css("img[alt='Homem Aranha]")
-    expect(direita).not_to have_css("img[alt='Homem Aranha]")
+    expect(esquerda).to have_css("img[alt='Homem Aranha']")
+    expect(direita).not_to have_css("img[alt='Homem Aranha']")
   end
 
   after(:each) do
