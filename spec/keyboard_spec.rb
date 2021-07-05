@@ -1,6 +1,6 @@
 describe "Quando usa a função de teclado em tela", :teclado do
   before(:each) do
-    visit "https://training-wheels-protocol.herokuapp.com/key_presses"
+    visit "/key_presses"
   end
 
   it "Então quando eu pressionar uma tecla" do

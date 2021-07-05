@@ -1,6 +1,6 @@
 describe "Quando eu sobre o mouse sobre", :hover do
   before(:each) do
-    visit "https://training-wheels-protocol.herokuapp.com/hovers"
+    visit "/hovers"
   end
 
   it "Então o hover da figura do blade" do

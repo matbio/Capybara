@@ -1,6 +1,6 @@
 describe "Quando eu entrar na página", :visit do
   it "Então visualizo sua tela" do
-    visit "https://training-wheels-protocol.herokuapp.com/"
+    visit "/"
     sleep 5
     expect(page.title).to eql("Training Wheels Protocol")
   end

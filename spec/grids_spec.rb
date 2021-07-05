@@ -1,6 +1,6 @@
 describe "Quando eu tenho uma tabela", :grid do
   before(:each) do
-    visit "https://training-wheels-protocol.herokuapp.com/tables"
+    visit "/tables"
   end
 
   it "Então eu consigo visualizar um elemento" do

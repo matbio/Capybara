@@ -2,7 +2,7 @@ describe "Quando eu uso a função de upload", :upload do
   before(:each) do
     @arquivo = Dir.pwd + "/fixtures/upload.txt"
     @imagem = Dir.pwd + "/fixtures/upload.jpg"
-    visit "https://training-wheels-protocol.herokuapp.com/upload"
+    visit "/upload"
   end
 
   it "Então eu subo um arquivo de texto (.txt)" do

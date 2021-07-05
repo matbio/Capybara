@@ -1,6 +1,6 @@
 describe "Quando eu realizo o login com um campo dinâmico", :logindynamic do
   before(:each) do
-    visit "https://training-wheels-protocol.herokuapp.com/login2"
+    visit "/login2"
   end
   it "Então eu acesso com sucesso" do
     fill_in "username", with: "stark"

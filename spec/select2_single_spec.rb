@@ -1,6 +1,6 @@
 describe "Quando eu uso o select 2 single", :single do
   before(:each) do
-    visit "https://training-wheels-protocol.herokuapp.com/apps/select2/single.html"
+    visit "/apps/select2/single.html"
   end
 
   it "Então eu seleciono uma opção" do

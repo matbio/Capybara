@@ -1,6 +1,6 @@
 describe "Quando eu uso o select 2 multiple", :multiple do
   before(:each) do
-    visit "https://training-wheels-protocol.herokuapp.com/apps/select2/multi.html"
+    visit "/apps/select2/multi.html"
   end
 
   def selecione(ator)

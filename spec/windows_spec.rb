@@ -1,6 +1,6 @@
 describe "Quando eu clicar no link que alterna as janelas", :janelas do
   before(:each) do
-    visit "https://training-wheels-protocol.herokuapp.com/windows"
+    visit "/windows"
   end
 
   it "Então eu acesso uma nova janela" do

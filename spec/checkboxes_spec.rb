@@ -1,6 +1,6 @@
 describe "Quando eu uso uma checkbox", :checkbox do
   before(:each) do
-    visit "https://training-wheels-protocol.herokuapp.com/checkboxes"
+    visit "/checkboxes"
   end
   it "Então marco um valor" do
     check("thor")

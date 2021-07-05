@@ -1,6 +1,6 @@
 describe "Quando eu realizo o login com IDs dinâmicos", :ids_dynamics do
   before(:each) do
-    visit "https://training-wheels-protocol.herokuapp.com/access"
+    visit "/access"
   end
 
   # $= termina com

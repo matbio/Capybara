@@ -1,6 +1,6 @@
 describe "Quando eu usar o iframe bom na minha página", :iframebom do
   before(:each) do
-    visit "https://training-wheels-protocol.herokuapp.com/nice_iframe"
+    visit "/nice_iframe"
   end
 
   it "Então vou adcionar um item ao carrinho " do
@@ -23,7 +23,7 @@ end
 
 describe "Quando eu usar o iframe ruim na minha página", :iframeruim do
   before(:each) do
-    visit "https://training-wheels-protocol.herokuapp.com/bad_iframe"
+    visit "/bad_iframe"
   end
 
   it "Então vou adcionar um item ao carrinho " do

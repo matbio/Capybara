@@ -1,6 +1,6 @@
 describe "Quando eu realizo o login com um campos de mesmo nome", :accesslogin do
   before(:each) do
-    visit "https://training-wheels-protocol.herokuapp.com/access"
+    visit "/access"
   end
   # Como nessa página temos dois formularios que apresentão o mesmos campos de input username e password, o capybara gera um erro de ambiguidade.
   # para solucionar esse erro podemos usar o escopo, indicando o elemento pai em que esses campos são unicos. exemplo abaixo:
@@ -40,7 +40,7 @@ end
 # para solucionar esse erro podemos usar o escopo, agora outra maneira de usar o escopo. exemplo abaixo:
 describe "Quando eu realizo o cadastro com um campos de mesmo nome", :accesssignup do
   before(:each) do
-    visit "https://training-wheels-protocol.herokuapp.com/access"
+    visit "/access"
   end
 
   def insere_dados_escopo(user, pass)

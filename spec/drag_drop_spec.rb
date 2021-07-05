@@ -1,6 +1,6 @@
 describe "Quando eu uso a função de drag e drop", :dragdrop do
   before(:each) do
-    visit "https://training-wheels-protocol.herokuapp.com/drag_and_drop"
+    visit "/drag_and_drop"
   end
 
   it "Então eu arrasto o elemento da direita para a esquerda" do

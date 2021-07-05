@@ -1,6 +1,6 @@
 describe "Quando eu uso a função enable/disable com Dynamic Control", :DC do
   before(:each) do
-    visit "https://training-wheels-protocol.herokuapp.com/dynamic_controls"
+    visit "/dynamic_controls"
   end
 
   it "Então habilita o elemento" do

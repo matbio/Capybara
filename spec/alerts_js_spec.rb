@@ -1,6 +1,6 @@
 describe "Quando eu clico no botão de alerta", :alerta do
   before(:each) do
-    visit "https://training-wheels-protocol.herokuapp.com/javascript_alerts"
+    visit "/javascript_alerts"
   end
 
   it "Então aparece uma mensagem de alerta" do
@@ -20,7 +20,7 @@ end
 
 describe "Quando eu clico no botão de Comfirma", :comfirma do
   before(:each) do
-    visit "https://training-wheels-protocol.herokuapp.com/javascript_alerts"
+    visit "/javascript_alerts"
   end
 
   it "Então aparece uma mensagem de Eai comfirma?" do
@@ -45,7 +45,7 @@ end
 
 describe "Quando eu clico no botão de prompt", :prompt do
   before(:each) do
-    visit "https://training-wheels-protocol.herokuapp.com/javascript_alerts"
+    visit "/javascript_alerts"
   end
 
   it "Então aparece uma mensagem de Qual é seu Nome?" do
