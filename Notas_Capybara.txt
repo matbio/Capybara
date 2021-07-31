@@ -1,13 +1,13 @@
 INSTRUÇÕES DE TRABALHO E COMANDOS PARA PROJETO EM CAPYBARA
 
 - Primeiro para começar um projeto em ruby executar o comando bundle init
-- Será gerado um arquivo chamado 'Gemfile' onde será centralizada as dependencias do seu projeto
+- Será gerado um arquivo chamado 'Gemfile' onde será centralizada as dependências do seu projeto
 - Pode se manter source "https://rubygems.org"
 - Adicionar a gem do rspec (gem "rspec", "3.9.0") será o motor da aplicação de testes
 - Adicionar a gem do Capybara (gem "capybara", "3.31.0") é a interface de interação com a app web
 - Adicionar a gem do Selenium web driver (selenium-webdriver", "3.142.7) é as ferramentas que o capybara vai usar para a interações na app
 - Adicionar a gem do fii (gem "ffi", "1.12.2") é as ferramentas de interface externas que o capybara vai utilizar também
-- Após alterar o Gemfile, executar o comando 'bundle install' para instalar as dependencias.
+- Após alterar o Gemfile, executar o comando 'bundle install' para instalar as dependências.
 - Para iniciar o Rspec executar comando: rspec --init. serão geradas a pasta spec como spec_helper.rb e o arquivo .rspec
 
 [dentro do arquivo spec_helper.rb]
@@ -33,12 +33,12 @@ Usando o Firefox:
     Google chrome - 
         1° Acessar a página https://chromedriver.storage.googleapis.com/index.html
         2° Visualizar a versão do seu google chrome
-        3° Baixar o arquivo compativel com sua versão do navegador
+        3° Baixar o arquivo compatível com sua versão do navegador
         4° Extrair e colocar o arquivo na pasta raiz c:\Windows
     Firefox - 
         1° Acessar a página https://github.com/mozilla/geckodriver/releases
         2° Visualizar a versão do seu Firefox
-        3° Baixar o arquivo compativel com sua versão do navegador
+        3° Baixar o arquivo compatível com sua versão do navegador
         4° Extrair e colocar o arquivo na pasta raiz c:\Windows
 
 #Corpo de teste padrão:
